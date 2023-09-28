@@ -3,7 +3,7 @@ import { FlatList } from 'react-native';
 import { Avatar, ListItem} from 'react-native-elements';
 import { HOMEBOYZ} from '../shared/homeboyz'
 
-const DirectoryScreen = (navigation) => {
+const DirectoryScreen = ({navigation}) => {
     const [homeboyz, setHomeboyz] = useState(HOMEBOYZ);
 
       const renderDirectoryItem = ({ item: homeboyz}) => {

@@ -1,6 +1,6 @@
 import RenderHomeboyz from '../features/homeboyz/RenderHomeboyz';
 
-const HomeboyzInfoScreen = (props) => {
+const HomeboyzInfoScreen = ({ route}) => {
     const { homeboyz} = route.params;
     return <RenderHomeboyz homeboyz = {homeboyz} />;
 
