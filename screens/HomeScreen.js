@@ -4,7 +4,6 @@ import { Card } from 'react-native-elements';
 import { HOMEBOYZ } from '../shared/homeboyz';
 import { PROMOTIONS } from '../shared/promotions';
 import { PARTNERS } from '../shared/partners';
-import { HOMEBOYZ } from '../shared/homeboyz';
 
 const FeaturedItem = ({ item }) => {
     if (item) {

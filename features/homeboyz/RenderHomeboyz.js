@@ -10,8 +10,8 @@ const RenderHomeboyz = ({ homeboyz }) => {
                     <View style ={{justifyContent: 'center', flex: 1}}>
                         <Text
                         style={{
-                            color: 'blue',
-                            textAlign: 'center',
+                            color: 'yellow',
+                            textAlign: 'auto',
                             fontSize: 20
                         }}
                         >

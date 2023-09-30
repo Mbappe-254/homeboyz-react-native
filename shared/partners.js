@@ -18,7 +18,7 @@ export const PARTNERS = [
     {
         id: 2,
         name: 'Mongo Fly Shop',
-        image: require("../assets/images/mongo-logo.png"),
+        image: require("../assets/images/mongodb.jpeg"),
         featured: false,
         description:
             'Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.',
@@ -26,7 +26,7 @@ export const PARTNERS = [
     {
         id: 3,
         name: 'Node Outdoor Apparel',
-        image: require("../assets/images/node-logo.png"),
+        image: require("../assets/images/node.png"),
         featured: true,
         description:
             'From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.',
