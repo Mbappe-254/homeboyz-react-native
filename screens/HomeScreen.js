@@ -13,7 +13,7 @@ const FeaturedItem = ({ item }) => {
                     <View style={{ justifyContent: 'center', flex: 1 }}>
                         <Text
                             style={{
-                                color: 'white',
+                                color: '#00ffff',
                                 textAlign: 'center',
                                 fontSize: 20
                             }}

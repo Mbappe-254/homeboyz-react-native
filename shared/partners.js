@@ -25,10 +25,10 @@ export const PARTNERS = [
     },
     {
         id: 3,
-        name: 'Node Outdoor Apparel',
-        image: require("../assets/images/node.png"),
+        name: 'Our Trophy Cabinet',
+        image: require("../assets/images/trophy.jpg"),
         featured: true,
         description:
-            'From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.',
+          'Reach Us Here'
     },
 ];

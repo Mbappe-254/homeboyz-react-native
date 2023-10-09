@@ -1,11 +1,12 @@
-import { Text, View} from 'react-native';
-import {Card } from 'react-native-elements';
+import { StyleSheet,Text, View} from 'react-native';
+import {Card,Icon } from 'react-native-elements';
 
-const RenderHomeboyz = ({ homeboyz }) => {
+const RenderHomeboyz = (props) => {
+ const { homeboyz } = props;
 
     if(homeboyz){
         return(
-            <Card containerStyle ={{ padding: 1}}>
+            <Card containerStyle ={styles.cardContainer}>
                 <Card.Image source={homeboyz.image}>
                     <View style ={{justifyContent: 'center', flex: 1}}>
                         <Text
@@ -19,12 +20,33 @@ const RenderHomeboyz = ({ homeboyz }) => {
                         </Text>
                     </View>
                 </Card.Image>
-                <Text style={{ margin:15 }}>{homeboyz.description}</Text>
+                <Text style={{ margin: 20 }}>{homeboyz.description}</Text>
+                <Icon
+                    name={props.isFavorite ? 'heart' : 'heart-o'}
+                    type='font-awesome'
+                    color='#f50'
+                    raised
+                    reverse
+                    onPress={() =>
+                        props.isFavorite
+                            ? console.log('Already set as a favorite')
+                            : props.markFavorite()
+                    }
+                />
             </Card>
         );
 
      }
     return <View/>
-}
+};
+
+const styles = StyleSheet.create({
+    cardContainer: {
+        padding: 0,
+        margin: 0,
+        marginBottom: 20
+    }
+});
+
 export default RenderHomeboyz;
 
